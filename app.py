@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 從環境變量獲取 OpenAI API 金鑰
-load_dotenv(dotenv_path='.gitignore/.env') 
+load_dotenv(dotenv_path='.env') 
 api_key = os.getenv('OPENAI_API_KEY')
 if not api_key:
     st.error("No valiDDD API key provided. Please set the OPENAI_API_KEY environment variable.")
