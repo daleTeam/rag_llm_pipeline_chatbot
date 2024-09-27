@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # 從環境變量獲取 OpenAI API 金鑰
 api_key = os.getenv('OPENAI_API_KEY')
 if not api_key:
-    st.error("No valid API key provided. Please set the OPENAI_API_KEY environment variable.")
+    st.error("No valiD API key provided. Please set the OPENAI_API_KEY environment variable.")
     st.stop()
 
 # 初始化 OpenAI 客戶端
